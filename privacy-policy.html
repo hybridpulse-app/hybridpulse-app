@@ -34,51 +34,88 @@
 <body>
     <div class="container">
         <h1>Privacy Policy</h1>
-        <p class="subtitle">HybridPulse &mdash; Last updated: February 20, 2026</p>
+        <p class="subtitle">HybridPulse &mdash; Last updated: November 14, 2026</p>
 
         <h2>Overview</h2>
-        <p>HybridPulse is a workout tracker designed with privacy at its core. We do not collect, transmit, or sell any of your personal data. All information you enter stays on your device.</p>
+        <p>HybridPulse is a training log and race planner for iPhone, iPad and Apple Watch. We (the developer) do not run any servers, and we do not collect, receive, sell or share your personal data. Everything you enter, and everything the app reads from Apple Health, is stored on your own devices. If you turn on iCloud sync, it is also stored in your own private iCloud account, which we cannot access. This policy explains what the app uses, why, and how you stay in control.</p>
 
-        <h2>Data Storage</h2>
-        <p>All workout logs, routines, body measurements, and settings are stored locally on your device using Apple's SwiftData framework. No data is sent to external servers.</p>
-
-        <h2>Apple HealthKit</h2>
-        <p>HybridPulse can optionally integrate with Apple Health to:</p>
+        <h2>Data stored in the app</h2>
+        <p>The app stores the following on your device, in the app's own storage:</p>
         <ul>
-            <li>Read body metrics (weight, heart rate, heart rate variability)</li>
-            <li>Write completed workouts</li>
+            <li>Your profile: the name you enter (optional), division, units and settings</li>
+            <li>Routines, training plans, scheduled sessions, logged workouts and sets (weight, reps, distance, time, heart rate), race simulations and personal records</li>
+            <li>Body measurements you enter, and progress photos you choose to add</li>
+            <li>Recovery values read from Apple Health (see below)</li>
         </ul>
-        <p>This access is entirely optional and controlled by you through iOS Settings. Health data is never sent outside your device.</p>
+        <p>Before a new app version opens your data for the first time, the app keeps a backup copy on your device so nothing is lost during an update.</p>
 
-        <h2>iCloud Sync</h2>
-        <p>If you enable iCloud, your data may sync between your devices through Apple's private CloudKit container. Apple manages the encryption and transmission of this data. We have no access to your iCloud data.</p>
+        <h2>Apple Health (HealthKit)</h2>
+        <p>Connecting Apple Health is optional. You choose per data type what HybridPulse may read or write, and you can change this at any time.</p>
+        <p><strong>HybridPulse may read:</strong> heart rate, resting heart rate, heart rate variability (HRV), sleep, body weight, body fat percentage, active energy, workouts recorded by other apps, walking/running and cycling distance, and cycling power and cadence. The app uses these to show your recovery and training trends and to link runs and rides to the sessions you planned.</p>
+        <p><strong>HybridPulse may write:</strong> the workouts you finish in the app (type, start time and duration).</p>
+        <p>Health data is never used for advertising, marketing or data mining, and is never sold. HybridPulse never sends your Health data to us or to any third party. It only leaves your device if you turn on iCloud sync (your own private iCloud, see below) or if you choose to share it yourself (see "AI coach review").</p>
 
-        <h2>Progress Photos</h2>
-        <p>Progress photos you take or import are stored locally on your device only. They are not uploaded to any server.</p>
+        <h2>Apple Watch and location</h2>
+        <p>When you track a run or race simulation on Apple Watch, the app uses your location (GPS) to measure distance, pace and elevation, and your heart rate to show your live heart rate and zone. Location is only used while a run is active, is stored with that workout in the app, and is never sent to us or to third parties. You can turn off location access for HybridPulse in the Watch app or in Settings at any time; you can then still log workouts without GPS.</p>
+
+        <h2>Calendar</h2>
+        <p>If you turn on calendar sync, HybridPulse creates a separate &ldquo;HybridPulse&rdquo; calendar and adds, updates and removes your planned sessions and race dates in it. The app needs full calendar access to update and remove the events it created. It does not read, change or upload your other calendars.</p>
+
+        <h2>iCloud sync (optional)</h2>
+        <p>iCloud sync is off by default. If you turn it on, your HybridPulse data &mdash; including workouts, heart rate and recovery values read from Apple Health, body measurements and progress photos &mdash; is synced between your own devices through your private iCloud database (Apple CloudKit). Apple stores and encrypts this data under your Apple Account. We have no access to it. You can turn sync off at any time in Profile &rarr; iCloud Sync.</p>
+
+        <h2>Sharing that you start yourself</h2>
+        <ul>
+            <li><strong>AI coach review.</strong> In the weekly recap you can create a text summary of your training week and share or copy it to an app of your choice, for example an AI assistant. HybridPulse does not send it anywhere itself. Apple Health data (resting heart rate, HRV, sleep and body weight) is left out unless you turn on &ldquo;Include Apple Health data&rdquo; and confirm. Whatever you share is handled by the app you choose, under that app's privacy policy.</li>
+            <li><strong>Exports, recaps and backups</strong> that you share through the share sheet go only to the destination you pick.</li>
+        </ul>
+
+        <h2>Race result import</h2>
+        <p>If you paste the link to your own race result page from results.hyrox.com, the app downloads that public page to read your split times. Only the page request is sent to that website; none of your data is sent. HybridPulse is not affiliated with or endorsed by HYROX.</p>
 
         <h2>Notifications</h2>
-        <p>HybridPulse may send local notifications for workout reminders and rest timers. These are generated entirely on your device. There is no push notification server.</p>
+        <p>Workout reminders and rest timer alerts are local notifications created on your device. There is no push notification server and no marketing messages.</p>
 
-        <h2>Analytics, Advertising &amp; Third-Party SDKs</h2>
-        <p>HybridPulse contains:</p>
+        <h2>Analytics, advertising and third parties</h2>
         <ul>
-            <li>No analytics or tracking frameworks</li>
-            <li>No advertising SDKs</li>
-            <li>No third-party data collection of any kind</li>
+            <li>No analytics, tracking or crash-reporting frameworks</li>
+            <li>No advertising and no advertising identifier</li>
+            <li>No third-party SDKs that collect data, and no data brokers</li>
+        </ul>
+        <p>Because we do not share data with third parties, there are no third parties that receive your data from us.</p>
+
+        <h2>Retention and deletion</h2>
+        <ul>
+            <li>Your data is kept on your device for as long as you keep it in the app.</li>
+            <li><strong>Delete everything:</strong> Profile &rarr; About HybridPulse &rarr; Delete All Data removes all workouts, routines, measurements, photos and settings from the app. With iCloud sync on, the deletion also removes the data from your iCloud.</li>
+            <li>Deleting the app removes all data stored on that device. iCloud data can also be removed in Settings &rarr; [your name] &rarr; iCloud &rarr; Manage Storage &rarr; HybridPulse.</li>
+            <li>Workouts the app wrote to Apple Health stay in Apple Health until you delete them there.</li>
         </ul>
 
-        <h2>Children's Privacy</h2>
-        <p>HybridPulse does not knowingly collect information from children under the age of 13.</p>
+        <h2>Withdrawing consent</h2>
+        <ul>
+            <li>Apple Health: Settings &rarr; Privacy &amp; Security &rarr; Health &rarr; HybridPulse (or the Health app &rarr; profile &rarr; Apps).</li>
+            <li>Location: Settings &rarr; Privacy &amp; Security &rarr; Location Services &rarr; HybridPulse.</li>
+            <li>Calendar: Settings &rarr; Privacy &amp; Security &rarr; Calendars &rarr; HybridPulse, or turn off sync in the app.</li>
+            <li>Notifications: Settings &rarr; Notifications &rarr; HybridPulse.</li>
+            <li>iCloud sync: Profile &rarr; iCloud Sync in the app.</li>
+            <li>Health data in the AI coach review: turn off &ldquo;Include Apple Health data&rdquo; in the weekly recap.</li>
+        </ul>
 
-        <h2>Changes to This Policy</h2>
-        <p>If we update this privacy policy, changes will be posted on this page with a revised date.</p>
+        <h2>Health information disclaimer</h2>
+        <p>HybridPulse is a training tool, not a medical device. Its recovery values, forecasts and training suggestions are not medical advice. Check with a doctor before starting a new training program or making decisions about your health.</p>
+
+        <h2>Children's privacy</h2>
+        <p>HybridPulse is not directed at children under 13 and does not knowingly collect information from them. Since we collect no personal data, no data from children reaches us.</p>
+
+        <h2>Changes to this policy</h2>
+        <p>If we update this policy, the new version is posted on this page with a revised date.</p>
 
         <h2>Contact</h2>
-        <p>If you have questions about this privacy policy or the app, please contact us at:</p>
-        <p><a href="mailto:hybridpulseapp@gmail.com">hybridpulseapp@gmail.com</a></p>
+        <p>Questions about this policy or your data? Email <a href="mailto:hybridpulseapp@gmail.com">hybridpulseapp@gmail.com</a>.</p>
 
         <div class="footer">
-            <p>&copy; 2026 HybridPulse. All rights reserved.</p>
+            &copy; 2026 HybridPulse. All rights reserved.
         </div>
     </div>
 </body>
